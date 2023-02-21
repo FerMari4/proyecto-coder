@@ -21,8 +21,9 @@ body{
 
 /*  HEADER INDEX */
 
-
-header section{
+.headerPages{
+    text-decoration: none;
+    width: 100%;
     background-color: black;
     display: flex;
     align-items: center;
@@ -51,16 +52,6 @@ h2{
     font-weight: 700;
 }
 
-/*HEADER PAGES*/
-
-.headerPages{
-    text-decoration: none;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    align-items: center;
-}
-
 /* BARRA DE NAVEGACION */
 
 .navBar{
@@ -68,6 +59,12 @@ h2{
     top: 0;
     left: 0;
     z-index: 9999;
+}
+
+.navBar ul{
+    display: flex;
+    list-style: none;
+    gap: 5px;
 }
 
 .navBar li a{
@@ -83,21 +80,22 @@ h2{
     font-size: 18px;
     font-weight: 700;
     text-align: center;
-    width: 12%;
+    width: 150px;
     margin-left: 5px;
     padding-top: 4px;
     padding-bottom: 4px;
-    display: inline-block;
     color: rgb(204, 204, 204);
     background-color: rgb(27, 27, 27);
 }
 
 /*BODY HOME*/
 
-.cuerpo {
+.cuerpo{
     background-color: black;
-    }
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
 
 .backHome{
     width: 100%;
@@ -116,6 +114,7 @@ h2{
     font-size: 26px;
     font-weight: 700;
     text-align: right;
+    line-height: 150%;
     color: rgb(204, 204, 204);
 }
 
@@ -233,6 +232,14 @@ h3{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+}
+
+.backNosotros{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
 }
 
 .historia{
@@ -366,7 +373,7 @@ footer a{
 }
 
 @media (max-width: 900px){
-    .backHome{
+    .backNosotros{
         opacity:0.2;
     }
 
@@ -397,6 +404,16 @@ footer a{
     .backHome{
         height: 390px;
         width: auto;
+    }
+
+    .backNosotros{
+        height: 390px;
+        width: auto;
+    }
+
+    .resena{
+        font-size: 22px;
+        top: 180px;
     }
 
     .historia{
@@ -458,7 +475,7 @@ footer a{
 }
 
 
-@media (max-width: 467px){
+@media (max-width: 476px){
 
     .headerPages{
         display: flex;
@@ -468,23 +485,45 @@ footer a{
     
     h2{
         font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .navBar ul{
+        display: flex;
+        justify-content: center;
     }
 
     .menuPrinc{
-        font-size: 13px;
+        font-size: 11px;
+        width: 80px;
     }
 
     .backHome{
-        height: 500px;
+        height: 560px;
         width: auto;
+        opacity: 0.5;
+    }
+
+    .backNosotros{
+        height: 560px;
+        width: auto;
+        opacity: 0.2;
+    }
+
+    .resena{
+        top: 250px;
+        font-size: 18px;
+        width: 100%;
+        left: 0;
+        text-align: center;
     }
 
     .historia{
-        top: 170px;
-        left:0px
+        top: 250px;
+        left:5%;
         font-size: 12px;
-        width: 95%;
-        padding: 5px;
+        line-height: 175%;
+        width: 90%;
         text-align: justify;
     }
 
