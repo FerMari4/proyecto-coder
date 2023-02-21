@@ -481,9 +481,10 @@ footer a{
 
     .historia{
         top: 170px;
-        left:5px
-        font-size: 14px;
-        width: 90%;
+        left:0px
+        font-size: 12px;
+        width: 95%;
+        padding: 5px;
         text-align: justify;
     }
 
@@ -505,3 +506,4 @@ footer a{
     }
 
 }
+
