@@ -347,7 +347,10 @@ footer {
     form button {
       font-size: 16px; }
   .sobreMi {
-    height: 180px; } }
+    height: 180px; }
+  .container {
+    margin-top: 35px;
+    margin-bottom: 35px; } }
 
 @media (max-width: 560px) {
   .logoHead2 {
