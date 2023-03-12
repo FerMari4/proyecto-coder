@@ -1,0 +1,176 @@
+/*-- BODY  --*/
+
+body{
+    background-color: $color-principal;
+}
+
+.cuerpo{
+    background-color: $color-principal;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    img{
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+    }
+    ul{
+        list-style: none;
+        position: absolute;
+        top: 220px;
+        right: 20px;
+        font-family: $fuente-principal;
+        font-size: 26px;
+        font-weight: 700;
+        text-align: right;
+        line-height: 150%;
+        color: $color-fuente-principal;
+    }
+}
+
+/*-- CARTA --*/
+
+.grid-container{
+    background-image: url("../assets/img/tablones3.png");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(16, 48px);
+    gap: 0 15px;
+    font-family: $fuente-principal;
+    color: $color-fuente-principal;
+    h4{
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        padding: 10px 0;
+    }
+    p{
+        font-weight: 400;
+        font-size: 20px;
+        font-weight: 400;
+        span{
+            position: relative;
+            top: -4px;
+            font-size: 12px;
+            &:hover{
+                font-size: 16px;
+            }
+        }
+    }
+
+    .burguer{
+        grid-column: 1/3;
+        grid-row: 1/9;
+        div{
+            display: flex;
+            justify-content: space-between;
+            p{
+                padding: 0px 15px;
+            }
+        }
+    }
+
+    .empanada{
+        grid-column: 1/3;
+        grid-row: 10/16;
+        div{
+            display: flex;
+            justify-content: space-between;
+            p{
+                padding: 5px 15px ;
+            }
+        }
+    }
+
+    .pizza{
+        grid-column: 3/5;
+        grid-row: 1/8;
+        div{
+            display: flex;
+            justify-content: space-between;
+            p{
+                padding: 0px 15px ;
+            }
+        }
+    }
+    .sandwich{
+        grid-column: 3/5;
+        grid-row: 9/16;
+        div{
+            display: flex;
+            justify-content: space-between;
+            p{
+                padding: 0px 15px ;
+            }
+        }
+    }
+}
+
+/*--  NOSOTROS  --*/
+
+.cuerpoNosotros{
+    background-color: $color-principal;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    img{
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+    }
+    p{
+        position: absolute;
+        top: 220px;
+        font-family: $fuente-principal;
+        font-size: 20px;
+        color: $color-fuente-principal;
+        width: 47%;
+        text-align: right;
+        margin-right: 25px;
+    }
+}
+
+/*-- FORMULARIO  --*/
+
+h3{
+    font-family: $fuente-principal;
+    font-size: 24px;
+    font-weight: 400;
+    color: $color-fuente-principal;
+    position: absolute;
+    top: 230px;
+    left: 20px;
+}
+form{
+    position: absolute;
+    top: 280px;
+    left: 20px;
+    font-family: $fuente-principal;
+    input{
+        width: 600px;
+        border-width: 1px;
+        border-color: $color-fuente-principal;
+        background-color: transparent;
+        font-weight: 400;
+        font-size: 14px;
+        color: $color-fuente-principal;
+        padding: 3px;
+        margin-bottom: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+    button{
+        width: 150px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
+
+.sobreMi{
+    height: 200px;
+}

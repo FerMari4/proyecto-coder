@@ -1,0 +1,53 @@
+/*-- HEADER  --*/
+.headerPages{
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    img{
+        width: 160px;
+        height: 160px;
+        margin-left: 5px;
+        background-size: cover;
+    }
+    h2{
+        color: $color-fuente-principal;
+        width: 100%;
+        text-align: center;
+        font-family: Rye;
+        font-size: 48px;
+        font-weight: 700;
+    }
+}
+
+.navBar{
+    background-color: $color-principal;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 5px;
+            li{
+                font-family: $fuente-principal;
+                font-size: 18px;
+                font-weight: 700;
+                text-align: center;
+                width: 150px;
+                margin-left: 5px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                background-color: $color-secundario;
+                &:hover{
+                    background-color: $color-footer;
+                }
+                }
+                a{
+                    color: $color-fuente-principal;
+                    text-decoration: none;
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                }
+    }
+}

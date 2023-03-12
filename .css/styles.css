@@ -1,0 +1,447 @@
+/*-- VARIABLES --*/
+/* RESETEO NAVEGADOR */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* FUENTES */
+/*-- HEADER  --*/
+.headerPages {
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center; }
+  .headerPages img {
+    width: 160px;
+    height: 160px;
+    margin-left: 5px;
+    background-size: cover; }
+  .headerPages h2 {
+    color: #cccccc;
+    width: 100%;
+    text-align: center;
+    font-family: Rye;
+    font-size: 48px;
+    font-weight: 700; }
+
+.navBar {
+  background-color: black;
+  top: 0;
+  left: 0;
+  z-index: 9999; }
+  .navBar ul {
+    display: flex;
+    list-style: none;
+    gap: 5px; }
+    .navBar ul li {
+      font-family: lato;
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      width: 150px;
+      margin-left: 5px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      background-color: #1b1b1b; }
+      .navBar ul li:hover {
+        background-color: #323232; }
+    .navBar ul a {
+      color: #cccccc;
+      text-decoration: none;
+      padding-top: 4px;
+      padding-bottom: 4px; }
+
+/*-- BODY  --*/
+body {
+  background-color: black; }
+
+.cuerpo {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+  .cuerpo img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5; }
+  .cuerpo ul {
+    list-style: none;
+    position: absolute;
+    top: 220px;
+    right: 20px;
+    font-family: lato;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: right;
+    line-height: 150%;
+    color: #cccccc; }
+
+/*-- CARTA --*/
+.grid-container {
+  background-image: url("../assets/img/tablones3.png");
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(16, 48px);
+  gap: 0 15px;
+  font-family: lato;
+  color: #cccccc; }
+  .grid-container h4 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 0; }
+  .grid-container p {
+    font-weight: 400;
+    font-size: 20px;
+    font-weight: 400; }
+    .grid-container p span {
+      position: relative;
+      top: -4px;
+      font-size: 12px; }
+      .grid-container p span:hover {
+        font-size: 16px; }
+  .grid-container .burguer {
+    grid-column: 1/3;
+    grid-row: 1/9; }
+    .grid-container .burguer div {
+      display: flex;
+      justify-content: space-between; }
+      .grid-container .burguer div p {
+        padding: 0px 15px; }
+  .grid-container .empanada {
+    grid-column: 1/3;
+    grid-row: 10/16; }
+    .grid-container .empanada div {
+      display: flex;
+      justify-content: space-between; }
+      .grid-container .empanada div p {
+        padding: 5px 15px; }
+  .grid-container .pizza {
+    grid-column: 3/5;
+    grid-row: 1/8; }
+    .grid-container .pizza div {
+      display: flex;
+      justify-content: space-between; }
+      .grid-container .pizza div p {
+        padding: 0px 15px; }
+  .grid-container .sandwich {
+    grid-column: 3/5;
+    grid-row: 9/16; }
+    .grid-container .sandwich div {
+      display: flex;
+      justify-content: space-between; }
+      .grid-container .sandwich div p {
+        padding: 0px 15px; }
+
+/*--  NOSOTROS  --*/
+.cuerpoNosotros {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+  .cuerpoNosotros img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5; }
+  .cuerpoNosotros p {
+    position: absolute;
+    top: 220px;
+    font-family: lato;
+    font-size: 20px;
+    color: #cccccc;
+    width: 47%;
+    text-align: right;
+    margin-right: 25px; }
+
+/*-- FORMULARIO  --*/
+h3 {
+  font-family: lato;
+  font-size: 24px;
+  font-weight: 400;
+  color: #cccccc;
+  position: absolute;
+  top: 230px;
+  left: 20px; }
+
+form {
+  position: absolute;
+  top: 280px;
+  left: 20px;
+  font-family: lato; }
+  form input {
+    width: 600px;
+    border-width: 1px;
+    border-color: #cccccc;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 14px;
+    color: #cccccc;
+    padding: 3px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column; }
+  form button {
+    width: 150px;
+    font-weight: 400;
+    font-size: 20px; }
+
+.sobreMi {
+  height: 200px; }
+
+/*-- FOOTER --*/
+footer {
+  background-color: #323232;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center; }
+  footer a {
+    text-decoration: none;
+    color: #cccccc; }
+  footer .sumate {
+    font-family: lato;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 8px;
+    width: 150px;
+    color: #cccccc; }
+  footer .ubiTel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    footer .ubiTel p {
+      font-family: lato;
+      color: #cccccc;
+      font-size: 14px;
+      font-weight: 400;
+      text-align: center;
+      width: 300px;
+      margin: 0;
+      padding: 0; }
+  footer nav {
+    margin-right: 8px; }
+    footer nav a img {
+      width: 40px;
+      height: 40px;
+      background-size: contain; }
+
+/* RESPONSIVE */
+@media (max-width: 1129px) {
+  .cuerpoNosotros p {
+    font-size: 16px;
+    margin-right: 15px; }
+  .grid-container div h4 {
+    font-size: 21px; }
+  .grid-container div div p {
+    font-size: 17px; }
+    .grid-container div div p span {
+      font-size: 8px; }
+      .grid-container div div p span:hover {
+        font-size: 14px; } }
+
+@media (max-width: 900px) {
+  .cuerpoNosotros img {
+    opacity: 0.2; }
+  .cuerpoNosotros p {
+    font-size: 16px;
+    width: 95%;
+    text-align: justify; }
+  .grid-container {
+    grid-template-rows: repeat(34, 42px);
+    gap: 0 15px; }
+    .grid-container h4 {
+      font-size: 21px; }
+    .grid-container p {
+      font-weight: 400;
+      font-size: 16px;
+      font-weight: 400; }
+    .grid-container .burguer {
+      grid-column: 1/8;
+      grid-row: 1/9; }
+    .grid-container .empanada {
+      grid-column: 1/8;
+      grid-row: 10/16; }
+    .grid-container .pizza {
+      grid-column: 1/8;
+      grid-row: 17/25; }
+    .grid-container .sandwich {
+      grid-column: 1/8;
+      grid-row: 26/34; }
+  /*-- Formulario --*/
+  h3 {
+    font-size: 22px;
+    top: 200px; }
+  form {
+    position: absolute;
+    top: 230px; }
+    form button {
+      font-size: 18px; }
+  .sobreMi {
+    height: 180px; } }
+
+@media (max-width: 768px) {
+  .headerPages img {
+    width: 100px;
+    height: 100px;
+    background-size: cover; }
+  .headerPages h2 {
+    font-size: 32px; }
+  .logoHead1 {
+    width: 100px;
+    height: 100px;
+    background-size: cover; }
+  .logoHead2 {
+    width: 100px;
+    height: 100px;
+    background-size: cover; }
+  .cuerpo img {
+    height: 390px;
+    width: auto; }
+  .cuerpo ul {
+    font-size: 22px;
+    top: 180px; }
+  .cuerpoNosotros img {
+    height: 390px;
+    width: auto; }
+  .cuerpoNosotros p {
+    top: 135px;
+    font-size: 14px;
+    width: 95%;
+    text-align: justify; }
+  .navBar ul li {
+    font-size: 14px; }
+  footer {
+    height: 35px; }
+    footer nav a img {
+      width: 30px;
+      height: 30px; }
+    footer .sumate {
+      font-size: 12px;
+      margin-left: 8px;
+      width: 150px; }
+    footer .ubiTel p {
+      width: 200px; }
+      footer .ubiTel p a {
+        font-size: 10px; }
+  h3 {
+    font-size: 18px;
+    top: 140px; }
+  form {
+    position: absolute;
+    top: 190px; }
+    form input {
+      width: 400px;
+      font-size: 12px; }
+    form button {
+      font-size: 16px; }
+  .sobreMi {
+    height: 180px; } }
+
+@media (max-width: 560px) {
+  .logoHead2 {
+    display: none; }
+  .navBar ul li {
+    font-size: 13px; } }
+
+@media (max-width: 476px) {
+  .headerPages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 180px;
+    margin-top: 25px; }
+    .headerPages h2 {
+      font-size: 28px;
+      margin-bottom: 15px; }
+  .navBar ul {
+    display: flex;
+    justify-content: center; }
+    .navBar ul li {
+      font-size: 11px;
+      width: 80px; }
+  .cuerpo ul {
+    top: 280px;
+    font-size: 18px;
+    width: 100%;
+    left: 0;
+    text-align: center; }
+  .cuerpo img {
+    height: 600px;
+    width: auto;
+    opacity: 0.5; }
+  .cuerpoNosotros p {
+    top: 250px;
+    left: 5%;
+    font-size: 12px;
+    line-height: 175%;
+    width: 90%;
+    text-align: justify; }
+  .cuerpoNosotros img {
+    height: 600px;
+    width: auto;
+    opacity: 0.2; }
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(38, 22px);
+    gap: 0 15px; }
+    .grid-container h4 {
+      font-size: 18px;
+      padding: 0; }
+    .grid-container p span {
+      display: none; }
+    .grid-container .burguer {
+      grid-column: 1/8;
+      grid-row: 1/7; }
+      .grid-container .burguer p {
+        font-size: 12px;
+        margin: 4px 0; }
+    .grid-container .empanada {
+      grid-column: 1/8;
+      grid-row: 10/19; }
+      .grid-container .empanada p {
+        font-size: 12px; }
+    .grid-container .pizza {
+      grid-column: 1/8;
+      grid-row: 21/28; }
+      .grid-container .pizza p {
+        font-size: 12px;
+        margin: 4px 0; }
+    .grid-container .sandwich {
+      grid-column: 1/8;
+      grid-row: 30/38; }
+      .grid-container .sandwich p {
+        font-size: 12px;
+        margin: 4px 0; }
+  h3 {
+    font-size: 16px;
+    top: 240px; }
+  form {
+    top: 270px; }
+    form input {
+      width: 280px;
+      font-size: 12px; }
+    form button {
+      font-size: 16px; }
+  .sobreMi {
+    height: 220px; }
+  footer {
+    flex-direction: column;
+    height: 90px;
+    justify-content: space-around; }
+    footer .sumate {
+      font-size: 12px;
+      margin-left: 8px;
+      width: 150px;
+      text-align: center; } }

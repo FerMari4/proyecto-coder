@@ -1,0 +1,50 @@
+/*-- FOOTER --*/ 
+
+footer{
+    background-color: $color-footer;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        text-decoration: none;
+        color: $color-fuente-principal;
+    }
+    .sumate{
+        font-family: $fuente-principal;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+        margin-left: 8px;
+        width: 150px;
+        color: $color-fuente-principal;
+    }
+    .ubiTel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-family: $fuente-principal;
+            color: $color-fuente-principal;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+            width: 300px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    nav{
+        margin-right: 8px;
+        a{
+            img{
+                width: 40px;
+                height: 40px;
+                background-size: contain;
+            }
+        }
+    }
+}
