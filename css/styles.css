@@ -35,7 +35,8 @@
   .navBar ul {
     display: flex;
     list-style: none;
-    gap: 5px; }
+    gap: 5px;
+    padding-left: 0; }
     .navBar ul li {
       font-family: lato;
       font-size: 18px;
