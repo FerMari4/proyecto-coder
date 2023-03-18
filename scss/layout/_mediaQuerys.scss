@@ -56,6 +56,11 @@
         .empanada{
             grid-column: 1/8;
             grid-row: 10/16;
+            div{
+                p{
+                    padding: 4px 15px;
+                }
+            }
         }
         .pizza{
             grid-column: 1/8;
@@ -183,6 +188,7 @@
         margin-bottom: 35px;
     }
 }
+
 @media (max-width: 560px){
     .logoHead2 {
         display: none;
@@ -196,6 +202,10 @@
         }
 
 }
+.cuerpoNosotros{
+    justify-content: center;
+}
+
 }
 @media (max-width: 476px){
 
@@ -221,6 +231,7 @@
         }
     }
     .cuerpo{
+        justify-content: center;
         ul{
             top: 280px;
             font-size: 18px;
@@ -231,13 +242,13 @@
         img{
             height: 600px;
             width: auto;
-            opacity: 0.5;
+            opacity: 0.3;
         }
     }
     .cuerpoNosotros{
         p{
             top: 250px;
-            left:5%;
+            left:1.5%;
             font-size: 12px;
             line-height: 175%;
             width: 90%;
@@ -265,7 +276,7 @@
         }
         .burguer{
             grid-column: 1/8;
-            grid-row: 1/7;
+            grid-row: 2/8;
             p{
                 font-size: 12px;
                 margin: 4px 0;
@@ -273,7 +284,7 @@
         }
         .empanada{
             grid-column: 1/8;
-            grid-row: 10/19;
+            grid-row: 11/20;
             p{
                 font-size: 12px;
             }
