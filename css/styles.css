@@ -13,19 +13,23 @@
   width: 100%;
   text-decoration: none;
   display: flex;
-  align-items: center; }
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0px; }
   .headerPages img {
     width: 160px;
     height: 160px;
     margin-left: 5px;
     background-size: cover; }
   .headerPages h2 {
-    color: #cccccc;
-    width: 100%;
-    text-align: center;
     font-family: Rye;
     font-size: 48px;
-    font-weight: 700; }
+    font-weight: 700;
+    text-align: center;
+    color: #cccccc;
+    width: 100%; }
 
 .navBar {
   background-color: black;
@@ -34,14 +38,19 @@
   z-index: 9999; }
   .navBar ul {
     display: flex;
-    list-style: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
     gap: 5px;
+    list-style: none;
     padding-left: 0; }
     .navBar ul li {
       font-family: lato;
       font-size: 18px;
       font-weight: 700;
       text-align: center;
+      color: #1b1b1b;
       width: 150px;
       margin-left: 5px;
       padding-top: 4px;
@@ -63,7 +72,10 @@ body {
   background-color: black;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end; }
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0px; }
   .cuerpo img {
     width: 100%;
     height: auto;
@@ -79,8 +91,8 @@ body {
     font-size: 26px;
     font-weight: 700;
     text-align: right;
-    line-height: 150%;
-    color: #cccccc; }
+    color: #cccccc;
+    line-height: 150%; }
 
 /*-- CARTA --*/
 .grid-container {
@@ -98,7 +110,6 @@ body {
     text-align: center;
     padding: 10px 0; }
   .grid-container p {
-    font-weight: 400;
     font-size: 20px;
     font-weight: 400; }
     .grid-container p span {
@@ -145,7 +156,10 @@ body {
   background-color: black;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start; }
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0px; }
   .cuerpoNosotros img {
     width: 100%;
     height: auto;
@@ -157,9 +171,10 @@ body {
     top: 220px;
     font-family: lato;
     font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
     color: #cccccc;
     width: 45%;
-    text-align: justify;
     margin-left: 15px; }
 
 /*-- FORMULARIO  --*/
@@ -167,6 +182,7 @@ h3 {
   font-family: lato;
   font-size: 24px;
   font-weight: 400;
+  text-align: left;
   color: #cccccc;
   position: absolute;
   top: 230px;
@@ -182,8 +198,10 @@ form {
     border-width: 1px;
     border-color: #cccccc;
     background-color: transparent;
-    font-weight: 400;
+    font-family: lato;
     font-size: 14px;
+    font-weight: 400;
+    text-align: left;
     color: #cccccc;
     padding: 3px;
     margin-bottom: 8px;

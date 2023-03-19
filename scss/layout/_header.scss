@@ -2,8 +2,7 @@
 .headerPages{
     width: 100%;
     text-decoration: none;
-    display: flex;
-    align-items: center;
+    @include flex(row, nowrap, center, center, 0px);
     img{
         width: 160px;
         height: 160px;
@@ -11,12 +10,8 @@
         background-size: cover;
     }
     h2{
-        color: $color-fuente-principal;
+        @include texto(Rye, 48px, 700, center, $color-fuente-principal);
         width: 100%;
-        text-align: center;
-        font-family: Rye;
-        font-size: 48px;
-        font-weight: 700;
     }
 }
 
@@ -26,15 +21,11 @@
     left: 0;
     z-index: 9999;
         ul{
-            display: flex;
+            @include flex(row, nowrap, flex-start, center, 5px);
             list-style: none;
-            gap: 5px;
             padding-left: 0;
             li{
-                font-family: $fuente-principal;
-                font-size: 18px;
-                font-weight: 700;
-                text-align: center;
+                @include texto($fuente-principal, 18px, 700, center, $color-secundario);
                 width: 150px;
                 margin-left: 5px;
                 padding-top: 4px;

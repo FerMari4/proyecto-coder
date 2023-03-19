@@ -6,9 +6,7 @@ body{
 
 .cuerpo{
     background-color: $color-principal;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    @include flex(row, nowrap, flex-end, center, 0px);
     img{
         width: 100%;
         height: auto;
@@ -21,12 +19,8 @@ body{
         position: absolute;
         top: 220px;
         right: 20px;
-        font-family: $fuente-principal;
-        font-size: 26px;
-        font-weight: 700;
-        text-align: right;
+        @include texto($fuente-principal, 26px, 700, right, $color-fuente-principal);
         line-height: 150%;
-        color: $color-fuente-principal;
     }
 }
 
@@ -48,7 +42,6 @@ body{
         padding: 10px 0;
     }
     p{
-        font-weight: 400;
         font-size: 20px;
         font-weight: 400;
         span{
@@ -113,9 +106,7 @@ body{
 
 .cuerpoNosotros{
     background-color: $color-principal;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    @include flex(row, nowrap, flex-start, center, 0px);
     img{
         width: 100%;
         height: auto;
@@ -126,11 +117,8 @@ body{
     p{
         position: absolute;
         top: 220px;
-        font-family: $fuente-principal;
-        font-size: 20px;
-        color: $color-fuente-principal;
+        @include texto($fuente-principal,20px, 400, justify, $color-fuente-principal);
         width: 45%;
-        text-align: justify;
         margin-left: 15px;
     }
 }
@@ -139,10 +127,7 @@ body{
 /*-- FORMULARIO  --*/
 
 h3{
-    font-family: $fuente-principal;
-    font-size: 24px;
-    font-weight: 400;
-    color: $color-fuente-principal;
+    @include texto($fuente-principal, 24px, 400, left, $color-fuente-principal);
     position: absolute;
     top: 230px;
     left: 20px;
@@ -157,9 +142,7 @@ form{
         border-width: 1px;
         border-color: $color-fuente-principal;
         background-color: transparent;
-        font-weight: 400;
-        font-size: 14px;
-        color: $color-fuente-principal;
+        @include texto($fuente-principal, 14px, 400, left, $color-fuente-principal);
         padding: 3px;
         margin-bottom: 8px;
         display: flex;
