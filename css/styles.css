@@ -174,7 +174,7 @@ body {
     font-weight: 400;
     text-align: justify;
     color: #cccccc;
-    width: 45%;
+    width: 46%;
     margin-left: 15px; }
 
 /*-- FORMULARIO  --*/
@@ -408,7 +408,7 @@ footer {
     .cuerpo img {
       height: 600px;
       width: auto;
-      opacity: 0.3; }
+      opacity: 0.2; }
   .cuerpoNosotros p {
     top: 250px;
     left: 1.5%;
